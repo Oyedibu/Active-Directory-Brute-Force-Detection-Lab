@@ -1,14 +1,14 @@
 # Active-Directory-Brute-Force-Detection-Lab
 # Project Overview
 This project demonstrates the configuration, simulation, and investigation of a brute-force attack in a Windows Active Directory environment.
-The objective was to:
-    .Deploy a Windows Server Domain Controller
-    .Join a Windows 10 client to the domain
-    .Configure Account Lockout Policy
-    .Simulate failed authentication attempts
-    .Investigate security events using Windows Event Viewer
-    .Analyze Kerberos authentication failures
-    .Correlate lockout events
+-The objective was to:
+    -Deploy a Windows Server Domain Controller
+    -Join a Windows 10 client to the domain
+    -Configure Account Lockout Policy
+    -Simulate failed authentication attempts
+    -Investigate security events using Windows Event Viewer
+    -Analyze Kerberos authentication failures
+    -Correlate lockout events
 This lab simulates real-world SOC investigation procedures.
 # Lab Architecture
 Environment: Hyper-V (On-Prem Lab)
