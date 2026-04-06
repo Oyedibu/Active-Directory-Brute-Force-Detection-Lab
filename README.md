@@ -14,10 +14,10 @@ This project demonstrates hands-on blue team skills in authentication monitoring
     7. Correlate lockout events
 This lab simulates real-world SOC investigation procedures.
 # Lab Architecture
-Environment: Hyper-V (On-Prem Lab)
-   # Machine    Role                      IP Address
-    DC01      Domain Controller          192.168.100.10
-    WIN10     Domain-Joined Client       192.168.100.20
+    Environment: Hyper-V (On-Prem Lab)
+        |Machine |Role | IP Address
+        |DC01|Domain Controller | 192.168.100.10
+        |WIN10| Domain-Joined Client | 192.168.100.20
 Domain Name: corp.local
 <img width="1366" height="768" alt="Domain Controller promoted" src="https://github.com/user-attachments/assets/15826a9d-fe6b-4bb3-b20c-49190435027f" />
 
