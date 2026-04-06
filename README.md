@@ -81,3 +81,24 @@ Confirmed lockout triggered after threshold was reached.
     .Defensive security controls
     .Authentication monitoring
     .Blue team investigation techniques
+# Incident Report
+## Multiple Kerberos Authentication Failures Leading to Account Lockout
+### Severity
+Medium (Credential Attack Simulation)
+### Summary
+A series of failed Kerberos pre-authentication attempts were detected against the domain account john.admin. After five consecutive failed login attempts, the domain account lockout policy was triggered, generating a lockout event on the Domain Controller.
+### Detection Method
+    .Event ID 4771 — Kerberos Pre-Authentication Failed (Status 0x18 – Bad Password)
+    .Event ID 4740 — Account Locked Out
+### Source of Activity
+    .Client IP: 192.168.100.20
+    .Machine: Windows 10 Domain-Joined Workstation
+### Root Cause
+Simulated brute-force authentication attempts using invalid credentials.
+### Containment
+Account automatically locked after 5 failed attempts per configured domain policy.
+### Lessons Learned
+    .Account lockout policies effectively mitigate brute-force attempts.
+    .Kerberos Event ID 4771 provides valuable insight into authentication failures.
+    .Correlating 4771 and 4740 events enables clear reconstruction of attack timelines.
+    
