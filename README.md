@@ -1,6 +1,9 @@
 # Active-Directory-Brute-Force-Detection-Lab
-# Project Overview
-This project demonstrates the configuration, simulation, and investigation of a brute-force attack in a Windows Active Directory environment.
+# Executive Summary
+This project simulates a real-world brute-force attack against a Windows Active Directory environment and demonstrates how such activity can be detected and investigated using native Windows Security Event logs.
+A Domain Controller and domain-joined Windows 10 client were deployed in a controlled lab environment. An account lockout policy was configured to enforce defensive controls. Multiple failed Kerberos authentication attempts were generated to simulate a brute-force attack, leading to account lockout.
+Security events were analyzed to reconstruct the attack timeline and identify the source system.
+This project demonstrates hands-on blue team skills in authentication monitoring, log analysis, and incident correlation within an enterprise Active Directory environment.
 # The objective was to:
     1. Deploy a Windows Server Domain Controller
     2. Join a Windows 10 client to the domain
