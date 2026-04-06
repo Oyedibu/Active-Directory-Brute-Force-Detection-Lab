@@ -29,15 +29,15 @@ Account Lockout Policy
     .Lockout Threshold: 5 failed attempts
     .Lockout Duration: 15 minutes
     .Reset Counter After: 15 minutes
-Verified using:
+# Verified using:
     net accounts
 # Attack Simulation
-# Simulated brute-force attack from Windows 10 client:
+## Simulated brute-force attack from Windows 10 client:
     .Attempted login with incorrect password 5 times
     .Triggered account lockout
     .Generated security events on Domain Controller
 # Event Log Analysis
-# Event ID 4771 — Kerberos Pre-Authentication Failed
+## Event ID 4771 — Kerberos Pre-Authentication Failed
     .Status 0x18 → Bad password
     .Status 0x12 → Account disabled/locked
     .Captured source IP address of attacking machine
@@ -63,7 +63,7 @@ Confirmed lockout triggered after threshold was reached.
     .Simulate lateral movement
     .Develop automated alerting
 # Key Takeaways
-# This project demonstrates hands-on experience with:
+## This project demonstrates hands-on experience with:
     .Windows Server administration
     .Defensive security controls
     .Authentication monitoring
