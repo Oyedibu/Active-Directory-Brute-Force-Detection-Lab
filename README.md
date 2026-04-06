@@ -16,6 +16,8 @@ Environment: Hyper-V (On-Prem Lab)
     DC01      Domain Controller          192.168.100.10
     WIN10     Domain-Joined Client       192.168.100.20
 Domain Name: corp.local
+<img width="1366" height="768" alt="Domain Controller promoted" src="https://github.com/user-attachments/assets/15826a9d-fe6b-4bb3-b20c-49190435027f" />
+
 # Active Directory Configuration
     .Installed Active Directory Domain Services (AD DS)
     .Promoted DC01 to Domain Controller
@@ -29,8 +31,12 @@ Account Lockout Policy
     .Lockout Threshold: 5 failed attempts
     .Lockout Duration: 15 minutes
     .Reset Counter After: 15 minutes
+    <img width="1366" height="768" alt="Account Lockout Policy" src="https://github.com/user-attachments/assets/954dab1c-8f52-4def-b900-cdd4e0a9e344" />
+
 # Verified using:
     net accounts
+    <img width="1366" height="768" alt="net accounts output" src="https://github.com/user-attachments/assets/0a60ada9-5f9c-499a-9fd7-2e84c10de127" />
+
 # Attack Simulation
 ## Simulated brute-force attack from Windows 10 client:
     .Attempted login with incorrect password 5 times
@@ -41,8 +47,12 @@ Account Lockout Policy
     .Status 0x18 → Bad password
     .Status 0x12 → Account disabled/locked
     .Captured source IP address of attacking machine
+    <img width="1366" height="768" alt="Event ID 4771" src="https://github.com/user-attachments/assets/71ba80a1-3cdc-46b4-90b3-9742644a4399" />
+
 Event ID 4740 — Account Locked Out
 Confirmed lockout triggered after threshold was reached.
+<img width="1366" height="768" alt="Event ID 4740" src="https://github.com/user-attachments/assets/898f785d-99f4-4ff5-82f0-b5fe403c134c" />
+
 # Investigation Process
     .Filtered Security logs for Event ID 4771
     .Identified repeated failed attempts
