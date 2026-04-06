@@ -31,11 +31,11 @@ Account Lockout Policy
     .Lockout Threshold: 5 failed attempts
     .Lockout Duration: 15 minutes
     .Reset Counter After: 15 minutes
-    <img width="1366" height="768" alt="Account Lockout Policy" src="https://github.com/user-attachments/assets/954dab1c-8f52-4def-b900-cdd4e0a9e344" />
+<img width="1366" height="768" alt="Account Lockout Policy" src="https://github.com/user-attachments/assets/954dab1c-8f52-4def-b900-cdd4e0a9e344" />
 
 # Verified using:
     net accounts
-    <img width="1366" height="768" alt="net accounts output" src="https://github.com/user-attachments/assets/0a60ada9-5f9c-499a-9fd7-2e84c10de127" />
+<img width="1366" height="768" alt="net accounts output" src="https://github.com/user-attachments/assets/0a60ada9-5f9c-499a-9fd7-2e84c10de127" />
 
 # Attack Simulation
 ## Simulated brute-force attack from Windows 10 client:
@@ -47,7 +47,7 @@ Account Lockout Policy
     .Status 0x18 → Bad password
     .Status 0x12 → Account disabled/locked
     .Captured source IP address of attacking machine
-    <img width="1366" height="768" alt="Event ID 4771" src="https://github.com/user-attachments/assets/71ba80a1-3cdc-46b4-90b3-9742644a4399" />
+<img width="1366" height="768" alt="Event ID 4771" src="https://github.com/user-attachments/assets/71ba80a1-3cdc-46b4-90b3-9742644a4399" />
 
 Event ID 4740 — Account Locked Out
 Confirmed lockout triggered after threshold was reached.
